@@ -30,15 +30,16 @@ public class Place_Adapter extends ArrayAdapter<Place>{
 
         Place currentPlace = getItem(position);
 
-//        GET AND SET IMAGE INFO
+
+//        GET AND SET PLACE IMAGE INFO
         ImageView PlaceImage = (ImageView) listItemView.findViewById(R.id.place_image);
         PlaceImage.setImageResource(currentPlace.getImageResourceId());
 
-//        GET AND SET IMAGE INFO
+//        GET AND SET PLACE NAME INFO
         TextView PlaceName = (TextView) listItemView.findViewById(R.id.place_name);
         PlaceName.setText(currentPlace.getPlaceName());
 
-//        GET AND SET IMAGE INFO
+//        GET AND SET PLACE WEB INFO
         TextView PlaceWeb = (TextView) listItemView.findViewById(R.id.place_web);
         PlaceWeb.setText(currentPlace.getPlaceWeb());
 

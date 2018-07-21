@@ -6,6 +6,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -25,20 +26,31 @@ public class HistoryFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.place_list, container, false);
+        View tabinfoView = inflater.inflate(R.layout.place_list, container, false);
+
+        //        GET AND SET TAB NAME INFO
+        TextView TabName = (TextView) tabinfoView.findViewById(R.id.tab_title);
+        TabName.setText("HISTORY");
+
+        //        GET AND SET TAB NAME INFO
+        TextView TabDescrip = (TextView) tabinfoView.findViewById(R.id.tab_descrip);
+        TabDescrip.setText(R.string.orlando);
+
+        //        GET AND SET TAB IMAGE INFO
+        ImageView TabImage = (ImageView) tabinfoView.findViewById(R.id.tab_image);
+        TabImage.setBackgroundResource(R.drawable.eola_old);
 
 //        CREATING ARRAYLIST FOR ABOUT
         final ArrayList<Place> place = new ArrayList<Place>();
 
-        place.add(new Place(R.drawable.eola_old, "old eloa", "Publix.com"));
+        place.add(new Place(R.drawable.eola_old, "Lake Eola", "Orlando.com"));
 
         Place_Adapter adapter = new Place_Adapter(getActivity(), place);
 
-        ListView listView = (ListView) rootView.findViewById(R.id.list);
+        ListView listView = (ListView) tabinfoView.findViewById(R.id.list);
 
         listView.setAdapter(adapter);
 
-        return rootView;
+        return tabinfoView;
     }
-
 }

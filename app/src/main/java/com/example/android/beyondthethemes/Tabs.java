@@ -4,11 +4,11 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
-public class tab_Adapter extends FragmentPagerAdapter{
+public class Tabs extends FragmentPagerAdapter{
 
     private String tabTitles[] = new String[] { "About", "History", "Food", "Nature" };
 
-    public tab_Adapter(FragmentManager fm) {
+    public Tabs(FragmentManager fm) {
         super(fm);
     }
 

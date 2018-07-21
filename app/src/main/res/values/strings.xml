@@ -3,5 +3,7 @@
     <string name="orlando">Orlando</string>
 
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="orlando_tab">"Orlando is more than just a tourist city. It is more than just theme parks and rides. Orlando is a beautiful city that has so much to offer. Here are a few places to visit to learn more."</string>
+
+
 </resources>
