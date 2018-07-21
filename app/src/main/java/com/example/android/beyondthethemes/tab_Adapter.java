@@ -16,14 +16,12 @@ public class tab_Adapter extends FragmentPagerAdapter{
     public Fragment getItem(int position) {
         if (position == 0) {
             return new AboutFragment();
-        }
-//        else if (position == 1){
-//            return new FamilyFragment();
-//        } else if (position == 2){
-//            return new ColorsFragment();
-//        }
-        else {
-            return new AboutFragment();
+        } else if (position == 1){
+            return new HistoryFragment();
+        } else if (position == 2){
+            return new FoodFragment();
+        } else {
+            return new NatureFragment();
         }
     }
 

@@ -14,10 +14,10 @@ import java.util.ArrayList;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class AboutFragment extends Fragment {
+public class HistoryFragment extends Fragment {
 
 
-    public AboutFragment() {
+    public HistoryFragment() {
         // Required empty public constructor
     }
 
@@ -30,7 +30,7 @@ public class AboutFragment extends Fragment {
 //        CREATING ARRAYLIST FOR ABOUT
         final ArrayList<Place> place = new ArrayList<Place>();
 
-        place.add(new Place(R.drawable.eola, "Lake Eola", "Orlando.com"));
+        place.add(new Place(R.drawable.eola_old, "old eloa", "Publix.com"));
 
         Place_Adapter adapter = new Place_Adapter(getActivity(), place);
 
