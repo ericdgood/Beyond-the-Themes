@@ -15,10 +15,10 @@ import java.util.ArrayList;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class HistoryFragment extends Fragment {
+public class TodoFragment extends Fragment {
 
 
-    public HistoryFragment() {
+    public TodoFragment() {
         // Required empty public constructor
     }
 
@@ -30,7 +30,7 @@ public class HistoryFragment extends Fragment {
 
         //        GET AND SET TAB NAME INFO
         TextView TabName = (TextView) tabinfoView.findViewById(R.id.tab_title);
-        TabName.setText("HISTORY");
+        TabName.setText("To Do");
 
         //        GET AND SET TAB NAME INFO
         TextView TabDescrip = (TextView) tabinfoView.findViewById(R.id.tab_descrip);

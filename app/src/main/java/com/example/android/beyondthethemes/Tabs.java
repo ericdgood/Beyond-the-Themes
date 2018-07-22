@@ -6,7 +6,7 @@ import android.support.v4.app.FragmentPagerAdapter;
 
 public class Tabs extends FragmentPagerAdapter{
 
-    private String tabTitles[] = new String[] { "About", "History", "Food", "Nature" };
+    private String tabTitles[] = new String[] { "About", "To DO", "Food", "Nature" };
 
     public Tabs(FragmentManager fm) {
         super(fm);
@@ -17,7 +17,7 @@ public class Tabs extends FragmentPagerAdapter{
         if (position == 0) {
             return new AboutFragment();
         } else if (position == 1){
-            return new HistoryFragment();
+            return new TodoFragment();
         } else if (position == 2){
             return new FoodFragment();
         } else {
