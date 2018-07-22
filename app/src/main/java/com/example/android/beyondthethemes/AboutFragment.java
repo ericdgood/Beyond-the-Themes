@@ -44,11 +44,11 @@ public class AboutFragment extends Fragment {
 //        CREATING ARRAYLIST FOR ABOUT
         final ArrayList<Place> place = new ArrayList<Place>();
 
-        place.add(new Place(R.drawable.eola, "Lake Eola", "Lake Eola"));
-        place.add(new Place(R.drawable.library, "Orange County Library", "Orlando.com"));
-        place.add(new Place(R.drawable.dt, "Downtown Orlando Info Center", "Orlando.com"));
-        place.add(new Place(R.drawable.garden, "Winter Garden Heritage Foundation", "Orlando.com"));
-        place.add(new Place(R.drawable.amway, "Amyway Center", "Orlando.com"));
+        place.add(new Place(R.drawable.eola, "Lake Eola", "OrangeCounty.com"));
+        place.add(new Place(R.drawable.library, "Orange County Library", "ocls.com"));
+        place.add(new Place(R.drawable.dt, "Downtown Orlando Info Center", "orlandoinfo.com"));
+        place.add(new Place(R.drawable.garden, "Winter Garden Heritage Foundation", "witergardenfl.com"));
+        place.add(new Place(R.drawable.amway, "Amyway Center", "amway.com"));
 
         Place_Adapter adapter = new Place_Adapter(getActivity(), place);
 

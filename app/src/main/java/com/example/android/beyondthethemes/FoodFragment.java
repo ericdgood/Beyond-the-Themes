@@ -43,11 +43,11 @@ public class FoodFragment extends Fragment {
 //        CREATING ARRAYLIST FOR ABOUT
         final ArrayList<Place> place = new ArrayList<Place>();
 
-        place.add(new Place(R.drawable.publix,"Publix Super Market", "Orlando.com"));
-        place.add(new Place(R.drawable.kobe,"Kobes Steak House", "Orlando.com"));
-        place.add(new Place(R.drawable.marlows,"Marlow's Tavern", "Orlando.com"));
-        place.add(new Place(R.drawable.tflats,   "Tijuana Flats", "Orlando.com"));
-        place.add(new Place(R.drawable.hard,"Hard Rock Cafe", "Orlando.com"));
+        place.add(new Place(R.drawable.publix,"Publix Super Market", "Publix.com"));
+        place.add(new Place(R.drawable.kobe,"Kobes Steak House", "Kobes.com"));
+        place.add(new Place(R.drawable.marlows,"Marlow's Tavern", "Marlows.com"));
+        place.add(new Place(R.drawable.tflats,   "Tijuana Flats", "Tflats.com"));
+        place.add(new Place(R.drawable.hard,"Hard Rock Cafe", "Hardrock.com"));
 
         Place_Adapter adapter = new Place_Adapter(getActivity(), place);
 
