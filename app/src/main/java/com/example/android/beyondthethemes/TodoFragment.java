@@ -43,7 +43,11 @@ public class TodoFragment extends Fragment {
 //        CREATING ARRAYLIST FOR ABOUT
         final ArrayList<Place> place = new ArrayList<Place>();
 
-        place.add(new Place(R.drawable.eola_old, "Lake Eola", "Orlando.com"));
+        place.add(new Place( "Orlando Museum of Art", "Orlando.com"));
+        place.add(new Place( "Orlando Science Center", "Orlando.com"));
+        place.add(new Place( "Dr. Phillips Center", "Orlando.com"));
+        place.add(new Place( "Florida Mall", "Orlando.com"));
+        place.add(new Place( "Champions Gate Golf", "Orlando.com"));
 
         Place_Adapter adapter = new Place_Adapter(getActivity(), place);
 

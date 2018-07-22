@@ -2,22 +2,32 @@ package com.example.android.beyondthethemes;
 
 public class Place {
 
-    // IMAGE OF PLACE
-    private Integer mPlaceImage;
-
     // NAME OF PLACE
     private String mPlaceName;
 
     // ADDRESS OF PLACE
     private String mPlaceWeb;
 
-//   CREATING A PLACE OBJECT
+
+    private int mPlaceImage = NO_IMAGE_PROVIDED;
+
+    private static final int NO_IMAGE_PROVIDED = -1;
+
+
+    //   CREATING A PLACE OBJECT
     public Place(int vpic, String vName, String vWeb)
     {
         mPlaceImage = vpic;
         mPlaceName = vName;
         mPlaceWeb = vWeb;
     }
+    //   CREATING A PLACE OBJECT
+    public Place(String vName, String vWeb)
+    {
+        mPlaceName = vName;
+        mPlaceWeb = vWeb;
+    }
+
 
 //   GETS THE IMAGE RESOURCE ID
     public Integer getImageResourceId() {
@@ -32,5 +42,9 @@ public class Place {
 //    GETS THE STRING FOR THE PLACE ADDRESS
     public String getPlaceWeb() {
         return mPlaceWeb;
+    }
+
+    public boolean hasImage() {
+        return mPlaceImage != NO_IMAGE_PROVIDED;
     }
 }

@@ -33,7 +33,15 @@ public class Place_Adapter extends ArrayAdapter<Place>{
 
 //        GET AND SET PLACE IMAGE INFO
         ImageView PlaceImage = (ImageView) listItemView.findViewById(R.id.place_image);
-        PlaceImage.setImageResource(currentPlace.getImageResourceId());
+        if (currentPlace.hasImage()) {
+            // If an image is available, display the provided image based on the resource ID
+            PlaceImage.setImageResource(currentPlace.getImageResourceId());
+            // Make sure the view is visible
+            PlaceImage.setVisibility(View.VISIBLE);
+        } else {
+            // Otherwise hide the ImageView (set visibility to GONE)
+            PlaceImage.setVisibility(View.GONE);
+        }
 
 //        GET AND SET PLACE NAME INFO
         TextView PlaceName = (TextView) listItemView.findViewById(R.id.place_name);
