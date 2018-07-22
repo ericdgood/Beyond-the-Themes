@@ -1,11 +1,14 @@
 package com.example.android.beyondthethemes;
 
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -49,11 +52,22 @@ public class FoodFragment extends Fragment {
         place.add(new Place(R.drawable.tflats,   "Tijuana Flats", "Tflats.com"));
         place.add(new Place(R.drawable.hard,"Hard Rock Cafe", "Hardrock.com"));
 
-        Place_Adapter adapter = new Place_Adapter(getActivity(), place);
+        final Place_Adapter adapter = new Place_Adapter(getActivity(), place);
 
         ListView listView = (ListView) tabinfoView.findViewById(R.id.list);
 
         listView.setAdapter(adapter);
+
+        // When listView item is clicked, item data is sent to new activity
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Place item = adapter.getItem(position);
+                String map = "http://maps.google.co.in/maps?q=" + item.getPlaceName();
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(map));
+                startActivity(intent);
+            }
+        });
 
         return tabinfoView;
     }
