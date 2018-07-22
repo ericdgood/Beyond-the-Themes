@@ -33,6 +33,4 @@ public class Place {
     public String getPlaceWeb() {
         return mPlaceWeb;
     }
-
-
 }
