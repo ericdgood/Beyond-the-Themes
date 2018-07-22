@@ -30,11 +30,11 @@ public class NatureFragment extends Fragment {
 
         //        GET AND SET TAB NAME INFO
         TextView TabName = (TextView) tabinfoView.findViewById(R.id.tab_title);
-        TabName.setText("NATURE");
+        TabName.setText(R.string.nature);
 
         //        GET AND SET TAB NAME INFO
         TextView TabDescrip = (TextView) tabinfoView.findViewById(R.id.tab_descrip);
-        TabDescrip.setText(R.string.orlando);
+        TabDescrip.setText(R.string.nature_tab);
 
         //        GET AND SET TAB IMAGE INFO
         ImageView TabImage = (ImageView) tabinfoView.findViewById(R.id.tab_image);

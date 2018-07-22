@@ -30,11 +30,11 @@ public class FoodFragment extends Fragment {
 
         //        GET AND SET TAB NAME INFO
         TextView TabName = (TextView) tabinfoView.findViewById(R.id.tab_title);
-        TabName.setText("FOOD");
+        TabName.setText(R.string.food);
 
         //        GET AND SET TAB NAME INFO
         TextView TabDescrip = (TextView) tabinfoView.findViewById(R.id.tab_descrip);
-        TabDescrip.setText(R.string.orlando);
+        TabDescrip.setText(R.string.food_tab);
 
         //        GET AND SET TAB IMAGE INFO
         ImageView TabImage = (ImageView) tabinfoView.findViewById(R.id.tab_image);

@@ -1,9 +1,13 @@
 <resources>
     <string name="app_name">Beyond The Themes</string>
     <string name="orlando">Orlando</string>
+    <string name="food">Food</string>
+    <string name="nature">Nature</string>
+    <string name="todo">ToDo</string>
 
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="orlando_tab">"Orlando is more than just a tourist city. It is more than just theme parks and rides. Orlando is a beautiful city that has so much to offer. Here are a few places to visit to learn more."</string>
-
-
+    <string name="orlando_tab">"Orlando is more than just <u>theme parks</u> . It is more than just theme parks and rides. Orlando is a beautiful city that has so much to offer. Here are a few places to visit to learn more."</string>
+    <string name="food_tab">"Orlando has some great food from around the world. Because of all the tourist we have a melting pot of food. Here are a list of some good places.</string>
+    <string name="todo_tab">"There is plenty to do in orlando, even if you are not a theme park person. Check out some of these places.</string>
+    <string name="nature_tab">"Besides all the theme parks and buildings, Orlando is home to all kinds of animals and nature. From the wetlands to the beaches. Check some out.</string>
 </resources>
