@@ -46,11 +46,11 @@ public class NatureFragment extends Fragment {
 //        CREATING ARRAYLIST FOR ABOUT
         final ArrayList<Place> place = new ArrayList<Place>();
 
-        place.add(new Place(R.drawable.gator, "Gatorland", "gatorland.com"));
-        place.add(new Place(R.drawable.owc, "Orlando Watersports Complex", "owc.com"));
-        place.add(new Place(R.drawable.air, "Central Florida Air boats", "cflairboats.com"));
-        place.add(new Place(R.drawable.springs, "Wekiva Springs", "wekiva.com"));
-        place.add(new Place(R.drawable.zoo, "Central Florida Zoo", "cflzoo.com"));
+        place.add(new Place(R.drawable.gator, R.strings.gatorN,R.strings.gatorW ));
+        place.add(new Place(R.drawable.owc,R.strings.owcN ,R.strings.owcW ));
+        place.add(new Place(R.drawable.air,R.strings.cflaN,R.strings.cflaW ));
+        place.add(new Place(R.drawable.springs,R.strings.springsN,R.strings.springsW ));
+        place.add(new Place(R.drawable.zoo,R.strings.zooN,R.strings.zooW ));
 
         final Place_Adapter adapter = new Place_Adapter(getActivity(), place);
 
