@@ -46,11 +46,11 @@ public class TodoFragment extends Fragment {
 //        CREATING ARRAYLIST FOR ABOUT
         final ArrayList<Place> place = new ArrayList<Place>();
 
-        place.add(new Place( "Orlando Museum of Art", "oma.com"));
-        place.add(new Place( "Orlando Science Center", "osc.com"));
-        place.add(new Place( "Dr. Phillips Center", "drphillips.com"));
-        place.add(new Place( "Florida Mall", "floridamall.com"));
-        place.add(new Place( "Champions Gate Golf", "championsgate.com"));
+        place.add(new Place(R.strings.artN ,R.strings.artW ));
+        place.add(new Place(R.strings.oscN , R.strings.oscW));
+        place.add(new Place(R.strings.drN ,R.strings.drW ));
+        place.add(new Place(R.strings.mallN ,R.strings.mallW ));
+        place.add(new Place(R.strings.golfN ,R.strings.glofW ));
 
         final Place_Adapter adapter = new Place_Adapter(getActivity(), place);
 
