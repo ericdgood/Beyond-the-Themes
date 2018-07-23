@@ -10,4 +10,57 @@
     <string name="food_tab">"Orlando has some great food from around the world. Because of all the tourist we have a melting pot of food. Here are a list of some good places.</string>
     <string name="todo_tab">"There is plenty to do in orlando, even if you are not a theme park person. Check out some of these places.</string>
     <string name="nature_tab">"Besides all the theme parks and buildings, Orlando is home to all kinds of animals and nature. From the wetlands to the beaches. Check some out.</string>
+
+<!--strings for places names  -->
+<!-- ABOUT FRAGMENT         -->
+    <string name="eola">"Lake Eola"</string>
+    <string name="ocls">"Orange County Library"</string>
+    <string name="dt_info">"Downtown Orlando Info Center"</string>
+    <string name="winterG">"Winter Garden Heritage Foundation"</string>
+    <string name="amwayC">"Amyway Center"</string>
+    
+    <string name="orangeW">"OrangeCounty.com"</string>
+    <string name="oclsW">"ocls.com"</string>
+    <string name="infow">"orlandoinfo.com"</string>
+    <string name="winterW">"witergardenfl.com"</string>
+    <string name="amwayW">"amway.com"</string>
+    
+    <!-- FOOD FRAGMENT         -->
+    <string name="publixN">"Publix Super Market"</string>
+    <string name="kobeN">"Kobes Steak House"</string>
+    <string name="marlowN">"Marlow's Tavern"</string>
+    <string name="tflatsN">"Tijuana Flats"</string>
+    <string name="hardN">"Hard Rock Cafe"</string>
+    
+    <string name="publixW">"Publix.com"</string>
+    <string name="kobeW">"Kobes.com"</string>
+    <string name="marlowW">"Marlows.com"</string>
+    <string name="tflatW">"Tflats.com"</string>
+    <string name="hardW">"Hardrock.com"</string>
+        
+    <!-- NATURE FRAGMENT         -->
+    <string name="gatorN">"Gatorland"</string>
+    <string name="owcN">"Orlando Watersports Complex"</string>
+    <string name="cflaN"> "Central Florida Air boats"</string>
+    <string name="springsN"> "Wekiva Springs"</string>
+    <string name="zooN"> "Central Florida Zoo"</string>
+    
+    <string name="gatorW">"gatorland.com"</string>
+    <string name="owcW">"owc.com"</string>
+    <string name="cflaW">"cflairboats.com"</string>
+    <string name="springsW">"wekiva.com"</string>
+    <string name="zooW">"cflzoo.com"</string>
+        
+    <!-- TO DO FRAGMENT         -->
+    <string name="artN">"Orlando Museum of Art"</string>
+    <string name="oscN">"Orlando Science Center"</string>
+    <string name="drN">"Dr. Phillips Center"</string>
+    <string name="mallN">"Florida Mall"</string>
+    <string name="golfN">"Champions Gate Golf"</string>
+    
+    <string name="artW">"oma.com"</string>
+    <string name="oscW">"osc.com"</string>
+    <string name="drW">"drphillips.com"</string>
+    <string name="mallW">"floridamall.com"</string>
+    <string name="glofW">"championsgate.com"</string>
 </resources>
