@@ -3,10 +3,10 @@ package com.example.android.beyondthethemes;
 public class Place {
 
     // NAME OF PLACE
-    private String mPlaceName;
+    private int mPlaceName;
 
     // ADDRESS OF PLACE
-    private String mPlaceWeb;
+    private int mPlaceWeb;
 
 
     private int mPlaceImage = NO_IMAGE_PROVIDED;
@@ -15,14 +15,14 @@ public class Place {
 
 
     //   CREATING A PLACE OBJECT
-    public Place(int vpic, String vName, String vWeb)
+    public Place(int vpic, int vName, int vWeb)
     {
         mPlaceImage = vpic;
         mPlaceName = vName;
         mPlaceWeb = vWeb;
     }
     //   CREATING A PLACE OBJECT
-    public Place(String vName, String vWeb)
+    public Place(int vName, int vWeb)
     {
         mPlaceName = vName;
         mPlaceWeb = vWeb;
@@ -35,12 +35,12 @@ public class Place {
     }
 
 //    GETS THE STRING FOR THE PLACE NAME
-    public String getPlaceName() {
+    public int getPlaceName() {
         return mPlaceName;
     }
 
 //    GETS THE STRING FOR THE PLACE ADDRESS
-    public String getPlaceWeb() {
+    public int getPlaceWeb() {
         return mPlaceWeb;
     }
 
